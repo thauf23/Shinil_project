@@ -285,7 +285,9 @@ h3{
 .history_menu ul{
     width: 100%;
 }
-.history_menu ul li{}
+.history_menu ul li{
+    font-size: 22em;
+}
 .history_menu ul li strong{}
 
 /* footer */
