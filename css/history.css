@@ -240,6 +240,28 @@ h3{
     text-align: center;
 }
 
+/* sub_history */
+.sub_history{
+    width: 100%;
+    padding: 55px 0 100px;
+}
+.sub_history p{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.history_bar{
+    margin: 0 auto;
+}
+
+.history_menu{
+    display: flex;
+    justify-content: center;
+}
+.history_menu div{}
+.history_menu div p{}
+.history_menu ul{}
+.history_menu ul li{}
 
 /* footer */
 footer{
