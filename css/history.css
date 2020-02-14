@@ -251,17 +251,42 @@ h3{
 }
 
 .history_bar{
+    width: 1400px;
     margin: 0 auto;
 }
 
 .history_menu{
     display: flex;
     justify-content: center;
+    margin-bottom: 30%;
 }
-.history_menu div{}
-.history_menu div p{}
-.history_menu ul{}
+.history_menu div{
+    width: 100%;
+    position: relative;
+    border: 1px solid #f00;
+}
+.history_menu div p{
+    width: 100%;
+    position: absolute;
+    left: 0; top: 0;
+    font-weight: bold;
+}
+.history_menu div p:first-child{
+    font-size: 8.125em;
+    color: rgba(30, 30, 30, .1);
+    border: 1px solid #f00;
+}
+.history_menu div p:last-child{
+    left: 17%; top: 170%;
+    font-size: 6.25em;
+    color: #626262;
+    border: 1px solid #f00;
+}
+.history_menu ul{
+    width: 100%;
+}
 .history_menu ul li{}
+.history_menu ul li strong{}
 
 /* footer */
 footer{
