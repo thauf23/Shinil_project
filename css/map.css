@@ -236,68 +236,34 @@ h3{
     text-align: center;
 }
 
-/* sub_ceo_message */
-.sub_ceo_message{
+/* sub_map */
+.sub_map{
     width: 1400px;
     margin: 0 auto;
     padding: 55px 0 100px;
 }
-.sub_ceo_message > p {
+.sub_map > p{
     margin-bottom: 60px;
     text-align: center;
 }
-.sub_ceo_message p img{}
-
-.sub_ceo_message figure{
-    position: relative;
+#map{
+    width: 100%; height: 60vh;
 }
-.sub_ceo_message figure p{}
-.sub_ceo_message figure p img{
-    width: 100%;
+.sub_map ul{
+    margin-top: 5%;
 }
-
-.sub_ceo_message figure figcaption{
-    position: absolute;
-    left: -5%; top: -5%;
-    background: #fffcee;
-    padding: 2% 3%;
+.sub_map ul li{
+    border-bottom: 1px solid #737373;
 }
-.sub_ceo_message figure figcaption strong{
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1.563em;
-    font-family: 'Nanum Gothic', sans-serif;
-    font-weight: 800;
-}
-.sub_ceo_message figure figcaption span{
-    display: block;
-    font-size: 1.125em;
-    white-space: pre-line;
-    font-family: 'Raleway', sans-serif;
-}
-.sub_ceo_message div{
-    margin-top: 55px;
-}
-.sub_ceo_message div p{
-    text-align: justify;
-    line-height: 200%;
-    margin-bottom: 40px;
-    white-space: pre-line;
-    font-family: 'Nanum Gothic', sans-serif;
-}
-.sub_ceo_message div p:nth-of-type(3){
+.sub_map ul li strong{
+    width: 18%;
     font-size: 1.25em;
-    font-weight: 700;
-    margin-bottom: 20px;
+    border-bottom: 1px solid #000;    
 }
-.sub_ceo_message div p:nth-of-type(4){
-    font-size: 0.938em;
-    margin-bottom: 40px;
-}
-.sub_ceo_message div p strong{
-    font-size: 1.875em;
-    color: #336699;
-    font-family: 'Kanit', sans-serif;
+.sub_map ul li span{
+    width: 82%;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding-left: 6%;
 }
 
 /* footer */

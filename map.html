@@ -93,14 +93,46 @@
             </section>
 <!-- sub_map -->
             <section class="sub_map">
-                <h3>CEO Message</h3>
+                <h3>Location Directions</h3>
                 <p><img src="img/product/product_dot_line.png" alt=""></p>
+                <div id="map"></div>
+
+                <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=2460d080a6ac6193370fcd7f977eb624"></script>
+                <script>
+                    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+                        mapOption = { 
+                            center: new kakao.maps.LatLng(14303154.9367224,4279806.7570293), // 지도의 중심좌표
+                            level: 3 // 지도의 확대 레벨
+                        };
+    
+                    var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
+    
+                    // 마커가 표시될 위치입니다 
+                    var markerPosition  = new kakao.maps.LatLng(14303154.9367224,4279806.7570293); 
+    
+                    // 마커를 생성합니다
+                    var marker = new kakao.maps.Marker({
+                        position: markerPosition
+                    });
+    
+                    // 마커가 지도 위에 표시되도록 설정합니다
+                    marker.setMap(map);
+    
+                    // 아래 코드는 지도 위의 마커를 제거하는 코드입니다
+                    // marker.setMap(null);    
+                </script>
                 
+                <ul>
+                    <li><strong>Address</strong><span>대구광역시 달서구 성서공단부로43길 41</span></li>
+                    <li><strong>Telephone number</strong><span>053 &#45; 581 &#45; 6330</span></li>
+                    <li><strong>Fex number</strong><span>053 &#45; 581 &#45; 6338</span></li>
+                    <li><strong>Directions</strong><span>계명대역 4번 출구 8분 거리</span></li>
+                </ul>
             </section>
     </div>
     <footer>
         <ul>
-            <li>주소 &#58; 대구광역시 달서구 성서공단부로 43길 41</li>
+            <li>주소 &#58; 대구광역시 달서구 성서공단부로43길 41</li>
             <li>사업자번호 &#58; 514&#45;04&#45;83866</li>
             <li>대표 &#58; 배명섭</li>
             <li>대표전화번호 &#58; 053&#45;581&#45;6330</li>

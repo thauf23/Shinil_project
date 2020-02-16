@@ -109,11 +109,9 @@ li:hover .nav_2_depth::before{
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid #f00; */
 }
 .nav_2_depth ul li{
     padding: 0 !important;
-    /* border: 1px solid #f00; */
 }
 .nav_2_depth ul li a{
     display: block;
@@ -241,7 +239,6 @@ h3{
 /* sub_Certification */
 .sub_Certification{
     width: 100%;
-    /* text-align: center; */
     padding: 55px 0 100px;
 }
 .sub_Certification > p{
