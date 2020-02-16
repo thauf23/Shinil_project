@@ -109,11 +109,9 @@ li:hover .nav_2_depth::before{
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid #f00; */
 }
 .nav_2_depth ul li{
     padding: 0 !important;
-    /* border: 1px solid #f00; */
 }
 .nav_2_depth ul li a{
     display: block;
@@ -207,7 +205,6 @@ li:hover .nav_2_depth::before{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid #f00; */
 }
 .sub_visual_nav ul li{
     width: 100%;
@@ -221,7 +218,6 @@ li:hover .nav_2_depth::before{
     letter-spacing: 2px;
 }
 .sub_visual_nav ul li:hover{
-    /* background: rgba(51, 99, 162, .6); */
     background: linear-gradient(360deg, rgba(26,48,76,1) 0%, rgba(34,67,110,1) 44%, rgba(51,99,162,1) 100%);
 }
 .sub_visual_nav ul li:first-child{

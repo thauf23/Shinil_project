@@ -207,7 +207,6 @@ li:hover .nav_2_depth::before{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid #f00; */
 }
 .sub_visual_nav ul li{
     width: 100%;
@@ -221,7 +220,6 @@ li:hover .nav_2_depth::before{
     letter-spacing: 2px;
 }
 .sub_visual_nav ul li:hover{
-    /* background: rgba(51, 99, 162, .6); */
     background: linear-gradient(360deg, rgba(26,48,76,1) 0%, rgba(34,67,110,1) 44%, rgba(51,99,162,1) 100%);
 }
 .sub_visual_nav ul li:first-child{
@@ -240,6 +238,50 @@ h3{
     text-align: center;
 }
 
+/* sub_Certification */
+.sub_Certification{
+    width: 100%;
+    /* text-align: center; */
+    padding: 55px 0 100px;
+}
+.sub_Certification > p{
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.sub_Certification_total{
+    width: 1400px;
+    margin: 0 auto;
+}
+.sub_Certification_total div{
+    display: flex;
+    justify-content: center;
+}
+.sub_Certification_total div p{
+    width: 100%;
+}
+.sub_Certification_total .first_menu{}
+.sub_Certification_total .first_menu p:nth-of-type(1){
+    background: rgba(121, 135, 149, .6);
+}
+.sub_Certification_total .first_menu p:nth-of-type(2){
+    background: rgba(155, 199, 241, .6);
+}
+.sub_Certification_total .last_menu{
+    text-align: right;
+}
+.sub_Certification_total .last_menu p:nth-of-type(1){
+    display: inline-block;
+    background: rgba(193, 202, 211, .6);
+}
+.sub_Certification_total .last_menu p:nth-of-type(2){
+    display: inline-block;
+    background: rgba(133, 161, 190, .8)
+}
+.sub_Certification_total div p img{
+    display: inline-block;
+    margin-bottom: -4px;
+}
 
 
 /* footer */
