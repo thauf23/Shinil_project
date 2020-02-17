@@ -248,11 +248,15 @@ h3{
 
 .customer_notice table{
     border-collapse: collapse;
+    border-spacing: 0px;
     width: 1400px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     text-align: center;
 }
-.customer_notice table tr:nth-of-type(1){
+/* .customer_notice table thead tr th{
+    height: 60px;
+} */
+.customer_notice table thead tr:nth-of-type(1){
     width: 100%;
 }
 .customer_notice table thead tr:nth-of-type(1) th{
@@ -268,31 +272,101 @@ h3{
 .customer_notice table thead tr:nth-of-type(2){
     border-top: 5px solid #3363a3;
 }
+.customer_notice table thead tr:nth-of-type(1) th, .customer_notice table thead tr:nth-of-type(1) td{
+    padding-bottom: 10px; 
+}
+.customer_notice table thead tr:nth-of-type(2) th{
+    padding: 25px 0;
+    border-bottom: 1px solid #eee;
+}
+.customer_notice table tbody tr td{
+    border-bottom: 1px solid #eee;
+    padding: 12px 0;
+    font-size: 0.875em;
+}
 
+.customer_notice table tbody tr td:nth-of-type(1){
+    width: 8%;
+    font-weight: bold;
+    font-size: 1.25em;
+}
+.customer_notice table tbody tr td:nth-of-type(2){
+    text-align: left;
+}
 
-.customer_notice table thead td{}
-.customer_notice table tr:nth-of-type(1){}
-.customer_notice table tr th{}
+fieldset{
+    border: none;
+    text-align: center;
+}
+fieldset form{
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #bebebe;
+}
 
-.customer_notice table tr td{}
+#notice_select{
+    width: 17%;
+    padding: 3px 10px 7px;
+    border: none;
+}
+fieldset form section option{
+    font-size: 0.875em;
+}
 
-fieldset{}
-fieldset form{}
-fieldset form section{}
-fieldset form section option{}
+fieldset form input{
+    width: 77%;
+    border: none;
+    padding-left: 10px;
+    border-left: 1px solid #bebebe;
+    border-right: 1px solid #bebebe;
+    font-size: 0.875em;
+}
+fieldset form button{
+    padding: 5px 20px 2px;
+    background: #fff;
+    border: none;
+}
+fieldset form input button i{
+    width: 100%;
+}
 
-fieldset form input{}
-fieldset form input button{}
-fieldset form input button i{}
-
-.notice_next{}
-.notice_next p{}
+.notice_next{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.notice_next p{
+    display: inline-block;
+    margin: 0 15px;
+}
+.notice_next p:hover{
+    transform: scale(1.3);
+}
 .notice_next p a{}
 
-.notice_next div{}
-.notice_next div{}
-.notice_next div span{}
-.notice_next div span a{}
+.notice_number{
+    display: inline-block;
+    width: 10%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.notice_number span{}
+    
+.notice_number span a{
+    padding: 5px;
+    box-sizing: border-box;
+}
+.notice_number span a:hover{
+    font-weight: bold;
+    color: #536a97;
+    transform: scale(1.8);
+}
 
 
 /* footer */
