@@ -232,11 +232,67 @@ li:hover .nav_2_depth::before{
     width: 100%;
 }
 
+/* h3 */
+h3{
+    font-size: 2.188em;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/* sub_customer_notice */
+.customer_notice{
+    width: 100%;
+    padding: 55px 0 100px;
+}
+
+.customer_notice table{
+    border-collapse: collapse;
+    width: 1400px;
+    margin: 0 auto;
+    text-align: center;
+}
+.customer_notice table tr:nth-of-type(1){
+    width: 100%;
+}
+.customer_notice table thead tr:nth-of-type(1) th{
+    text-align: left;
+}
+.customer_notice table tr td a{
+    font-size: 0.875em;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+.customer_notice table thead tr:nth-of-type(2){
+    border-top: 5px solid #3363a3;
+}
 
 
+.customer_notice table thead td{}
+.customer_notice table tr:nth-of-type(1){}
+.customer_notice table tr th{}
 
+.customer_notice table tr td{}
 
+fieldset{}
+fieldset form{}
+fieldset form section{}
+fieldset form section option{}
 
+fieldset form input{}
+fieldset form input button{}
+fieldset form input button i{}
+
+.notice_next{}
+.notice_next p{}
+.notice_next p a{}
+
+.notice_next div{}
+.notice_next div{}
+.notice_next div span{}
+.notice_next div span a{}
 
 
 /* footer */
