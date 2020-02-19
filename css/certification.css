@@ -45,9 +45,6 @@ header .header_box{
     display: flex;
     justify-content: space-between;
 }
-header .header_box h1{}
-header .header_box h1 a{}
-header .header_box h1 a img{}
 
 /* nav_1_depth */
 .header_box .nav_1_depth{
@@ -166,7 +163,6 @@ li:hover .nav_2_depth::before{
 .sub_visual_nav figure{
     position: relative;
 }
-.sub_visual_nav figure p{}
 .sub_visual_nav figure p img{
     width: 100%;
     display: block;
@@ -259,7 +255,6 @@ h3{
 .sub_Certification_total div p{
     width: 100%;
 }
-.sub_Certification_total .first_menu{}
 .sub_Certification_total .first_menu p:nth-of-type(1){
     background: rgba(121, 135, 149, .6);
 }
