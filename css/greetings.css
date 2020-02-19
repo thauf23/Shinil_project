@@ -205,30 +205,30 @@ li:hover .nav_2_depth::before{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid #f00; */
 }
 .sub_visual_nav ul li{
     width: 100%;
     text-align: center;
     border-right: 1px solid rgba(51, 99, 162, .4);
     padding: 15px;
-    font-size: 1.438em;
-    font-family: 'Noto Sans KR', sans-serif;
-    color: #fff;
-    font-weight: 300;
-    letter-spacing: 2px;
 }
 .sub_visual_nav ul li:hover{
-    /* background: rgba(51, 99, 162, .6); */
     background: linear-gradient(360deg, rgba(26,48,76,1) 0%, rgba(34,67,110,1) 44%, rgba(51,99,162,1) 100%);
 }
 .sub_visual_nav ul li:first-child{
     width: 20%;
     border-left: 1px solid rgba(51, 99, 162, .4);
 }
-.sub_visual_nav ul li a{}
-.sub_visual_nav ul li a img{
+.sub_visual_nav ul li a{
     width: 100%;
+    font-size: 1.438em;
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+.sub_visual_nav ul li a img{
+    width: 30px;
 }
 
 /* h2 */
@@ -326,7 +326,7 @@ footer ul li:last-child{
     display: flex;
     justify-content: center;
     position: fixed;
-    right: 1%; top: 28%;
+    right: 1%; top: 40%;
     border-radius: 10px;
 }
 .quick_menu ul{}
