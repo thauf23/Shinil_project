@@ -285,7 +285,7 @@ footer ul li:last-child{
 }
 
 /* quick_meun */
-.quick_meun{
+.quick_menu{
     width: 120px;
     background: rgba(0, 0, 0, .75);
     display: flex;
@@ -295,48 +295,48 @@ footer ul li:last-child{
     z-index: 100;
     border-radius: 10px;
 }
-.quick_meun ul{
+.quick_menu ul{
     width: 100%;
 }
-.quick_meun ul li{
+.quick_menu ul li{
     width: 100%;
     
 }
-.quick_meun ul li:hover{
+.quick_menu ul li:hover{
     background: rgba(80, 77, 77, .5);
 }
-.quick_meun ul li:nth-child(1):hover{
+.quick_menu ul li:nth-child(1):hover{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.quick_meun ul li:nth-child(4):hover{
+.quick_menu ul li:nth-child(4):hover{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.quick_meun ul li:last-child{
+.quick_menu ul li:last-child{
     text-align: center;
 }
-.quick_meun ul li a{
+.quick_menu ul li a{
     width: 100%; height: 100%;
     padding: 30px 0;
     border-bottom: 1px solid #626262;
 }
-.quick_meun ul li:last-child a{
+.quick_menu ul li:last-child a{
     border: none;
 }
-.quick_meun ul li a figure{
+.quick_menu ul li a figure{
     width: 50%;
     margin: 0 auto;
 }
-.quick_meun ul li:last-child a figure p img{
+.quick_menu ul li:last-child a figure p img{
     width: 40%;
 }
-.quick_meun ul li a figure p img{
+.quick_menu ul li a figure p img{
     width: 100%;
 }
 
-.quick_meun ul li a figure figcaption{
+.quick_menu ul li a figure figcaption{
     padding-top: 5px;
     font-size: 0.938em;
     color: #fff;

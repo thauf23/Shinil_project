@@ -195,7 +195,7 @@ li:hover .nav_2_depth::before{
 /* sub_nav */
 .sub_visual_nav div{
     width: 100%;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .7);
     position: absolute;
     left: 0; bottom: 0;
 }
@@ -253,14 +253,13 @@ h3{
     margin: 0 auto 30px;
     text-align: center;
 }
-/* .customer_notice table thead tr th{
-    height: 60px;
-} */
+
 .customer_notice table thead tr:nth-of-type(1){
     width: 100%;
 }
 .customer_notice table thead tr:nth-of-type(1) th{
     text-align: left;
+    font-size: 1.25em;
 }
 .customer_notice table tr td a{
     font-size: 0.875em;
@@ -272,8 +271,8 @@ h3{
 .customer_notice table thead tr:nth-of-type(2){
     border-top: 5px solid #3363a3;
 }
-.customer_notice table thead tr:nth-of-type(1) th, .customer_notice table thead tr:nth-of-type(1) td{
-    padding-bottom: 10px; 
+.customer_notice table thead tr:nth-of-type(1) th{
+    padding-bottom: 15px; 
 }
 .customer_notice table thead tr:nth-of-type(2) th{
     padding: 25px 0;
@@ -342,7 +341,7 @@ fieldset form input button i{
 }
 .notice_next p{
     display: inline-block;
-    margin: 0 15px;
+    margin: 0 40px;
 }
 .notice_next p:hover{
     transform: scale(1.3);
@@ -351,7 +350,7 @@ fieldset form input button i{
 
 .notice_number{
     display: inline-block;
-    width: 10%;
+    width: 8%;
     display: flex;
     justify-content: space-around;
 }
@@ -387,7 +386,7 @@ footer ul li:last-child{
 }
 
 /* quick_meun */
-.quick_meun{
+.quick_menu{
     width: 120px;
     background: rgba(0, 0, 0, .75);
     display: flex;
@@ -397,48 +396,48 @@ footer ul li:last-child{
     z-index: 100;
     border-radius: 10px;
 }
-.quick_meun ul{
+.quick_menu ul{
     width: 100%;
 }
-.quick_meun ul li{
+.quick_menu ul li{
     width: 100%;
     
 }
-.quick_meun ul li:hover{
+.quick_menu ul li:hover{
     background: rgba(80, 77, 77, .5);
 }
-.quick_meun ul li:nth-child(1):hover{
+.quick_menu ul li:nth-child(1):hover{
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
-.quick_meun ul li:nth-child(4):hover{
+.quick_menu ul li:nth-child(4):hover{
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 
-.quick_meun ul li:last-child{
+.quick_menu ul li:last-child{
     text-align: center;
 }
-.quick_meun ul li a{
+.quick_menu ul li a{
     width: 100%; height: 100%;
     padding: 30px 0;
     border-bottom: 1px solid #626262;
 }
-.quick_meun ul li:last-child a{
+.quick_menu ul li:last-child a{
     border: none;
 }
-.quick_meun ul li a figure{
+.quick_menu ul li a figure{
     width: 50%;
     margin: 0 auto;
 }
-.quick_meun ul li:last-child a figure p img{
+.quick_menu ul li:last-child a figure p img{
     width: 40%;
 }
-.quick_meun ul li a figure p img{
+.quick_menu ul li a figure p img{
     width: 100%;
 }
 
-.quick_meun ul li a figure figcaption{
+.quick_menu ul li a figure figcaption{
     padding-top: 5px;
     font-size: 0.938em;
     color: #fff;

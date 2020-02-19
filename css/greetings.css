@@ -109,11 +109,9 @@ li:hover .nav_2_depth::before{
     width: 100%;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid #f00; */
 }
 .nav_2_depth ul li{
     padding: 0 !important;
-    /* border: 1px solid #f00; */
 }
 .nav_2_depth ul li a{
     display: block;
@@ -321,8 +319,8 @@ footer ul li:last-child{
     display: block;
 }
 
-/* quick_meun */
-.quick_meun{
+/* quick_menu */
+.quick_menu{
     width: 120px;
     background: rgba(0, 0, 0, .75);
     display: flex;
@@ -331,21 +329,21 @@ footer ul li:last-child{
     right: 1%; top: 28%;
     border-radius: 10px;
 }
-.quick_meun ul{}
-.quick_meun ul li:last-child{
+.quick_menu ul{}
+.quick_menu ul li:last-child{
     transform: translateX(25%);
 }
-.quick_meun ul li a{
+.quick_menu ul li a{
     padding: 30px 0;
     border-bottom: 1px solid #626262;
 }
-.quick_meun ul li a figure{}
-.quick_meun ul li a figure p{}
-.quick_meun ul li a figure p img{
+.quick_menu ul li a figure{}
+.quick_menu ul li a figure p{}
+.quick_menu ul li a figure p img{
     width: 100%;
 }
 
-.quick_meun ul li a figure figcaption{
+.quick_menu ul li a figure figcaption{
     padding-top: 5px;
     font-size: 0.938em;
     color: #fff;
