@@ -168,7 +168,7 @@ li:hover .nav_2_depth::before{
 }
 .sub_visual_nav figure p{}
 .sub_visual_nav figure p img{
-    width: 100%;
+    width: 100%; height: 650px;
     display: block;
 }
 
