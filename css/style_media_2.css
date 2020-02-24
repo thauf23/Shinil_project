@@ -213,7 +213,7 @@ li:hover .nav_2_depth::before{
 /* visual_icon */
 .visual_icon{
     position: absolute;
-    right: 15%; top: 29%;
+    right: 15%; top: 11vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -233,11 +233,13 @@ li:hover .nav_2_depth::before{
 
 /* h2 */
 h2{
-    font-size: 2.188em;
+    /* font-size: 2.188em; */
+    font-size: 2vw;
     margin-bottom: 10px;
 }
 h2 span{
-    font-size: 2.188rem;
+    /* font-size: 2.188rem; */
+    font-size: 2vw;
     color: #666;
 }
 
@@ -274,18 +276,21 @@ h2 span{
 }
 .product_area ul li a figure figcaption span{
     display: block;
-    font-size: 1.563em;
+    /* font-size: 1.563em; */
+    font-size: 1.2vw;
     color: #fff;
     text-align: center;
     padding: 60px 0;
-    background: rgba(247, 139, 51, .3);
+    background: rgba(247, 139, 51, .5);
     font-family: 'Noto Sans KR', sans-serif;
 }
 .product_icon{
+    width: 100%;
     position: absolute;
-    left: -18%; bottom: 8%;
+    left: -50%; bottom: 8%;
 }
 .product_icon p:last-child{
+    width: 100%;
     position: absolute;
     left: 0; bottom: 0%;
     opacity: 0;
@@ -300,28 +305,34 @@ li:hover .product_icon p:last-child{
     text-align: center;
     background: #dfdfdf;
     padding: 75px 0 100px 0;
+    overflow: hidden;
 }
 .technology_area_blue{
     width: 100%;
     height: 560px;
-    margin-left: 19%;
+    margin-left: 15vw;
     margin-top: 30px;
     background: rgba(89, 114, 163, .9);
 }
 .technology_area_blue div{
     width: 74%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     position: relative;
-    left: -7vw; top: 45px;
+    left: -15vw; top: 45px;
     border: 1px solid #f00;
+}
+.technology_area_blue div p img{
+    max-width: 100%; height: auto;
 }
 .technology_area_blue div dl{
     position: relative;
     left: -8%; top: 0;
+    border: 1px solid #f00;
 }
 .technology_area_blue div dl dt{
-    font-size: 1.875em;
+    font-size: 1.6vw;
     color: #fff;
     white-space: pre-line;
     word-spacing: 10px;
@@ -329,12 +340,12 @@ li:hover .product_icon p:last-child{
     padding-top: 70px;
 }
 .technology_area_blue div dl dt span{
-    font-size: 2.5rem;
+    font-size: 2.2vw;
     color: #fff;
     font-weight: bold;
 }
 .technology_area_blue div dl dt strong{
-    font-size: 3.125rem;
+    font-size: 2.5vw;
     color: #fff;
     letter-spacing: 5px;
     font-family: 'Kanit', sans-serif;
@@ -373,7 +384,7 @@ li:hover .product_icon p:last-child{
 .technology_area_blue div dl dd a .technology_text_up{
     display: inline-block;
     padding-bottom: 90px;
-    font-size: 1.25em;
+    font-size: 1.2vw;
     color: #fff;
     transition: .35s;
 }
@@ -408,13 +419,13 @@ li:hover .product_icon p:last-child{
 .customer_area ul li strong{
     display: block;
     text-align: center;
-    font-size: 2.375em;
+    font-size: 2.1vw;
     color: #fff;
     letter-spacing: 2px;
 }
 .customer_area ul li span{
     display: block;
-    font-size: 0.875em;
+    font-size: 0.8vw;
     color: #fff;
     text-align: center;
     margin-top: 10px;
@@ -444,15 +455,21 @@ footer > div{
     width: 74%;
     margin: 0 auto;
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
 }
 footer ul{
-    width: 100%;
-    padding-top: 9%;
+    width: 50%;
 }
 footer ul li{
-    /* transform: translateY(250%) translateX(30%); */
-    padding-left:30%;
+    width: 40%;
+    margin: 0 auto;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+footer ul li:first-child{
+    padding-top: 3vw;
 }
 footer ul li:last-child{
     padding-top: 5%;
@@ -460,24 +477,27 @@ footer ul li:last-child{
     font-size: 0.688em;
 }
 footer ul li span{
-    display: block;
-    font-size: 1.25em;
+    font-size: 1.2vw;
     color: #fff;
-    margin: 8px 0 5px;
+    margin-top: 0.7vw;
 }
 footer ul li small{
-    display: block;
-    font-size: 0.75em;
+    font-size: 0.7vw;
     color: #8b8a8a;
 }
+.footer_map{
+    width: 50%;
+}
 .footer_map a p img{
-    width: 100;
+    max-width: 100%; height: auto;
     display: block;
-    margin-bottom: -4px;
+    margin-bottom: -0.2vw;
 }
 
 
-
+/* =================================================================
+==============================media=================================
+================================================================= */
 
 
 
