@@ -24,7 +24,6 @@ header::after{
     left: 0; top: 90px;
     z-index: 10;
     display: none;
-    transition: 1s;
 }
 header:hover::after{
     display: block;
@@ -40,7 +39,7 @@ header .header_box{
 
 /* nav_1_depth */
 .header_box .nav_1_depth{
-    width: 1000px;
+    width: 1024px;
     min-width: 500px;
     margin: 7px;
 }
@@ -280,7 +279,7 @@ h2 span{
     font-size: 1.2vw;
     color: #fff;
     text-align: center;
-    padding: 60px 0;
+    padding: 4vw 0;
     background: rgba(247, 139, 51, .5);
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -321,14 +320,14 @@ li:hover .product_icon p:last-child{
     justify-content: space-between;
     position: relative;
     left: -15vw; top: 45px;
-    border: 1px solid #f00;
+    padding-right: 3vw;
 }
 .technology_area_blue div p img{
     max-width: 100%; height: auto;
 }
 .technology_area_blue div dl{
     position: relative;
-    left: -8%; top: 0;
+    left: 0; top: 0;
     border: 1px solid #f00;
 }
 .technology_area_blue div dl dt{
@@ -499,8 +498,102 @@ footer ul li small{
 ==============================media=================================
 ================================================================= */
 
+@media(max-width:1024px){
+
+/* header */
+    header{
+        padding: 0 40px;
+    }
+    header::after{
+        content: '';
+        display: block;
+        background: #f2f3f3;
+        width: 100%; height: 257px;
+        position: absolute;
+        left: 0; top: 90px;
+        z-index: 10;
+        display: none;
+    }
+    header:hover::after{
+        display: block;
+        box-shadow: none;
+    }
+    .language p a:first-child{
+        right: 40%;
+    }
+    .language p a:last-child{
+        right: 0%;
+    }
+    .header_box .nav_1_depth{
+        width: 100%;
+        background: #f2f3f3;
+        margin: 0;
+        position: absolute;
+        left: 0; top: 90px;
+        z-index: 100;
+    }
+    .header_box .nav_1_depth ul li{
+        width: 100%;
+        padding: 20px 0;
+    }
+    .nav_2_depth{
+        position: absolute;
+        left: 0; top: 63px;
+    }
+
+/* visual */
+    .visual{
+        margin-top: 6vw;
+    }
+    
+/* product_area */
+    .product_area ul{
+        width: 88%;
+        margin: 0 auto;
+    }
+    .product_area ul li{
+        margin-left: 3vw;
+    }
+    .product_icon{
+        width: 100%;
+        position: absolute;
+        left: 0%; bottom: -18%;
+    }
+    .product_icon p img{
+        max-width: 100%; height: auto;
+    }
+
+/* technology_area */
+
+    .technology_area_blue{
+        width: 100%;
+        height: 400px;
+        margin: 30px 0;
+    }
+    .technology_area_blue div{
+        width: 88%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        left: 0; top: 45px;
+        border: 1px solid #f00;
+    }
+    .technology_area_blue div p{
+        width: 45%;
+        border: 1px solid #f00;
+    }
+    .technology_area_blue div dl{
+        width: 50%;
+        left: 0;
+        border: 1px solid #f00;
+    }
 
 
 
+} 
+@media(max-width:768px){}
 
 
+
+@media(max-width:480px){}
