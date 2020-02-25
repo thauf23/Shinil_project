@@ -3,7 +3,8 @@
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean');
 /* font-family: 'Kanit', sans-serif; */
 @import url('https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean,latin-ext,thai,vietnamese');
-
+/* header_bugur */
+@import url('header_buger.css');
 
 .warp{
     width: 100%;
@@ -111,8 +112,9 @@ li:hover .nav_2_depth::before{
 .nav_2_depth ul li a:hover{
     color: #6580b6;
 }
-
-
+.nav_language{
+    display: none;
+}
 
 /* header_icon */
 .language{
@@ -141,6 +143,9 @@ li:hover .nav_2_depth::before{
 }
 .language p a img{
     width: 100%;
+}
+.header_bugur{
+    display: none;
 }
 
 .contant{
@@ -308,13 +313,13 @@ li:hover .product_icon p:last-child{
 }
 .technology_area_blue{
     width: 100%;
-    height: 560px;
+    height: 460px;
     margin-left: 15vw;
     margin-top: 30px;
     background: rgba(89, 114, 163, .9);
 }
 .technology_area_blue div{
-    width: 74%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -322,13 +327,16 @@ li:hover .product_icon p:last-child{
     left: -15vw; top: 45px;
     padding-right: 3vw;
 }
+.technology_area_blue div p{
+    padding-left: 13vw;
+}
 .technology_area_blue div p img{
     max-width: 100%; height: auto;
 }
 .technology_area_blue div dl{
+    width: 80%;
     position: relative;
-    left: 0; top: 0;
-    border: 1px solid #f00;
+    left: 6vw; top: 0;
 }
 .technology_area_blue div dl dt{
     font-size: 1.6vw;
@@ -336,7 +344,8 @@ li:hover .product_icon p:last-child{
     white-space: pre-line;
     word-spacing: 10px;
     text-align: left;
-    padding-top: 70px;
+    padding-top: 1vw;
+    padding-left: 1vw;
 }
 .technology_area_blue div dl dt span{
     font-size: 2.2vw;
@@ -348,22 +357,22 @@ li:hover .product_icon p:last-child{
     color: #fff;
     letter-spacing: 5px;
     font-family: 'Kanit', sans-serif;
-    border: 900;
+    font-weight: 900;
 }
 
 .technology_area_blue div dl dd{
     position: absolute;
-    left: 0; bottom: 0;
+    left: 0; bottom: -4vw;
 }
 .technology_area_blue div dl dd:nth-of-type(2){
-    left: 42%;
+    left: 13vw;
 }
 .technology_area_blue div dl dd:nth-of-type(3){
-    left: 83%;
+    left: 26vw;
 }
 
 .technology_area_blue div dl dd a p img{
-    width: 85%;
+    max-width: 100%; height: auto;
 }
 .technology_area_blue div dl dd a:hover p:nth-of-type(1){
     opacity: 0;
@@ -375,14 +384,17 @@ li:hover .product_icon p:last-child{
     transition: .35s;
 }
 .technology_area_blue div dl dd a:hover p:nth-of-type(2){
-    top: -3px;
-    transform: scale(1.2);
+    /* top: -3px; */
+    transform: scale(1.1);
     opacity: 1;
 }
-
+.technology_area_blue div dl .dd_last a:hover p:nth-of-type(2){
+    top: -15px; left: -8px;
+    transform: scale(0.9);
+}
 .technology_area_blue div dl dd a .technology_text_up{
     display: inline-block;
-    padding-bottom: 90px;
+    padding-bottom: 5vw;
     font-size: 1.2vw;
     color: #fff;
     transition: .35s;
@@ -390,7 +402,9 @@ li:hover .product_icon p:last-child{
 .technology_area_blue div dl dd a:hover .technology_text_up{
     padding-bottom: 120px;
 }
-
+.technology_area_blue div dl dd a p{
+    padding: 0;
+}
 
 
 /* customer_area */
@@ -557,7 +571,7 @@ footer ul li small{
     .product_icon{
         width: 100%;
         position: absolute;
-        left: 0%; bottom: -18%;
+        left: 0%; bottom: -20%;
     }
     .product_icon p img{
         max-width: 100%; height: auto;
@@ -567,7 +581,7 @@ footer ul li small{
 
     .technology_area_blue{
         width: 100%;
-        height: 400px;
+        height: 380px;
         margin: 30px 0;
     }
     .technology_area_blue div{
@@ -576,23 +590,80 @@ footer ul li small{
         display: flex;
         justify-content: space-between;
         position: relative;
-        left: 0; top: 45px;
-        border: 1px solid #f00;
+        left: 0; top: 60px;
     }
     .technology_area_blue div p{
         width: 45%;
-        border: 1px solid #f00;
+        padding-left: 0;
     }
     .technology_area_blue div dl{
-        width: 50%;
-        left: 0;
-        border: 1px solid #f00;
+        width: 60%;
+        left: 7vw;
+    }
+    .technology_area_blue div dl dd{
+        position: absolute;
+        left: 0; bottom: -4vw;
+    }
+    .technology_area_blue div dl dd:nth-of-type(1){
+        left: 1vw;
+    }
+    .technology_area_blue div dl dd:nth-of-type(2){
+        left: 17vw;
+    }
+    .technology_area_blue div dl dd:nth-of-type(3){
+        left: 32vw;
+    }
+    .technology_area_blue div dl dd a p{
+        width: 100%;
+        margin: 0;
+    }
+    .technology_area_blue div dl dd a p img{
+        max-width: 160%; height: auto;
+    }
+    .technology_area_blue div dl dd a:hover .technology_text_up{
+        padding-bottom: 65px;
+    }
+    .technology_area_blue div dl dd a:hover p:nth-of-type(2){
+        top: -3px;
+        transform: scale(0.9);
+        opacity: 1;
+    }
+} 
+@media(max-width:768px){
+
+    header .header_box{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .header_bugur{
+        display: block;
+    }
+    .language{
+        display: none;
+    }
+/* nav */
+    .header_box .nav_1_depth{
+        width: 100%;
+    }
+    .header_box .nav_1_depth ul{
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        text-align: center;
+    }
+    .header_box .nav_1_depth ul li a{
+        border: none;
     }
 
 
 
-} 
-@media(max-width:768px){}
+
+
+
+
+}
 
 
 

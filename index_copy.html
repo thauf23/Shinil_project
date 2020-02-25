@@ -59,18 +59,46 @@
                                 </ul>
                             </div>
                         </li>
+                        <li class="nav_language">
+                            <a href="#">English</a>
+                            <a href="#">Korea</a>
+                        </li>
                     </ul>
                 </nav>
 <!-- header_icon -->
                 <div class="language">
                     <p>
                         <a href="#">
-                            <img src="img/nav_ko.png" alt="Korean">
+                            <img src="img/nav_ko.png" alt="Korea">
                         </a>
                         <a href="#">
                             <img src="img/nav_en.png" alt="english">
                         </a>
                     </p>                    
+                </div>
+                <div class="header_bugur">
+                    <a class="menu-trigger type11" href="#">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                    <script
+                        src="https://code.jquery.com/jquery-3.4.1.slim.js"
+                        integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
+                        crossorigin="anonymous">
+                    </script>
+                    <script>
+                        var burger = $('.menu-trigger');
+
+                        burger.each(function(index){
+                            var $this = $(this);
+                            
+                            $this.on('click', function(e){
+                                e.preventDefault();
+                                $(this).toggleClass('active-11');
+                            })
+                         });
+                    </script>
                 </div>
             </div>
         </header>
@@ -237,7 +265,7 @@
                                     <span class="technology_text_up">Equipment</span>
                                 </a>
                             </dd>
-                            <dd>
+                            <dd class="dd_last">
                                 <a href="sub_3.html">
                                     <p><img src="img/technology/technology_research_icon.png" alt="research"></p>
                                     <p><img src="img/technology/technology_research_bicon.png" alt="research"></p>
