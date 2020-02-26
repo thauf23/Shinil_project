@@ -65,6 +65,13 @@ header .header_box{
 .header_box .nav_1_depth ul li:last-child a{
     border-right: none;
 }
+.nav_language{
+    display: none;
+}
+.nav_language a{
+    width: 30%; height: 100%;
+}
+
 
 /* nav_2_depth */
 .nav_2_depth{
@@ -111,9 +118,6 @@ li:hover .nav_2_depth::before{
 }
 .nav_2_depth ul li a:hover{
     color: #6580b6;
-}
-.nav_language{
-    display: none;
 }
 
 /* header_icon */
@@ -640,29 +644,64 @@ footer ul li small{
     .header_bugur{
         display: block;
     }
-    .language{
+    .language, header:hover::after, li:hover .nav_2_depth::before, header:hover .nav_2_depth, li:hover .nav_2_depth{
         display: none;
     }
 /* nav */
     .header_box .nav_1_depth{
         width: 100%;
+        /* display: none; */
     }
     .header_box .nav_1_depth ul{
         display: flex;
         justify-content: end;
         flex-direction: column;
-        text-align: center;
+        text-align: right;
+    }
+    .header_box .nav_1_depth ul li{
+        padding: 0;
     }
     .header_box .nav_1_depth ul li a{
+        padding: 15px 30px;
         border: none;
+        background: linear-gradient(360deg, rgba(230,230,230,1) 0%, rgba(235,235,235,1) 7%, rgba(246,246,246,1) 100%);
     }
-
-
-
-
-
-
-
+    .header_box .nav_1_depth ul li a:hover{
+        background: linear-gradient(360deg, rgba(230,230,230,1) 0%, rgba(235,235,235,1) 45%, rgba(246,246,246,1) 100%);
+    }
+    .nav_language{
+        display: block;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .header_box .nav_1_depth ul .nav_language a{
+        font-size: 1em;
+        color: #999;
+    }
+    .header_box .nav_1_depth ul .nav_language a:hover{
+        text-decoration: underline;
+    }
+    .nav_2_depth{
+        height: 100%;
+        position: relative;
+        left: 0; top: 0;
+        display: none;
+    }
+    li:hover .nav_2_depth{
+        background: #fff;
+    }
+    .nav_1_depth ul li:hover .nav_2_depth{
+        display: block;
+    }
+    .header_box .nav_1_depth ul li .nav_2_depth ul li a{
+        background: #fff;
+        border-bottom: 1px solid #ccc;
+    }
+    .header_box .nav_1_depth ul li .nav_2_depth ul li a:hover{
+        background: rgba(176, 201, 253, .3);
+        color: #333;
+    }
 }
 
 

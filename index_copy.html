@@ -15,7 +15,7 @@
                     <a href="index.html"><img src="img/logo.png" alt="logo"></a>
                 </h1>
 <!-- nav -->
-                <nav class="nav_1_depth">
+                <nav class="nav_1_depth nav_1_nav">
                     <ul>
                         <li>
                             <a href="greetings.html">신일폴리텍</a>
@@ -85,17 +85,19 @@
                     <script
                         src="https://code.jquery.com/jquery-3.4.1.slim.js"
                         integrity="sha256-BTlTdQO9/fascB1drekrDVkaKd9PkwBymMlHOiG+qLI="
-                        crossorigin="anonymous">
+                        crossorigin="anonymous"
+                        type="text/javascript">
                     </script>
-                    <script>
+                    <script type="text/javascript">
                         var burger = $('.menu-trigger');
 
                         burger.each(function(index){
                             var $this = $(this);
-                            
+
                             $this.on('click', function(e){
                                 e.preventDefault();
                                 $(this).toggleClass('active-11');
+                                $(nav).toggleClass('nav_1_nav');
                             })
                          });
                     </script>
