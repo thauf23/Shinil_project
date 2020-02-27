@@ -45,8 +45,8 @@
 }
 /* 전체 메뉴를 감싸는 원 파형이 살며시 퍼지며 엑스버튼 만들기 */
 .menu-trigger span.type11:nth-of-type(1) {
-    -webkit-animation : menu-bar11-01 .5s forwards;
-    animation : menu-bar11-01 .5s forwards;
+    -webkit-animation : menu-bar11-01 .2s forwards;
+    animation : menu-bar11-01 .2s forwards;
 }
 @-webkit-keyframes menu-bar11-01 {
     0% {
@@ -65,8 +65,8 @@
     }
 }
 .menu-trigger span.type11:nth-of-type(2) {
-    -webkit-animation : menu-bar11-02 .5s forwards;
-    animation : menu-bar11-02 .5s forwards;
+    -webkit-animation : menu-bar11-02 .2s forwards;
+    animation : menu-bar11-02 .2s forwards;
 }
 @-webkit-keyframes menu-bar11-02 {
     0% {
@@ -85,8 +85,8 @@
     }
 }
 .menu-trigger span.type11:nth-of-type(3) {
-    -webkit-animation : menu-bar11-03 .5s forwards;
-    animation : menu-bar11-03 .5s forwards;
+    -webkit-animation : menu-bar11-03 .2s forwards;
+    animation : menu-bar11-03 .2s forwards;
 }
 @-webkit-keyframes menu-bar11-03 {
     0% {
@@ -120,8 +120,8 @@
     opacity : 0;
 }
 .menu-trigger.active-11:after {
-    -webkit-animation : circle .5s;
-    animation : circle .5s;
+    -webkit-animation : circle .2s;
+    animation : circle .2s;
 }
 @-webkit-keyframes circle {
     0% {
@@ -150,8 +150,8 @@
     }
 }
 .menu-trigger.active-11 span:nth-of-type(1) {
-    -webkit-animation : active-menu-bar11-01 .5s .5s forwards;
-    animation : active-menu-bar11-01 .5s .5s forwards;
+    -webkit-animation : active-menu-bar11-01 .2s .2s forwards;
+    animation : active-menu-bar11-01 .2s .2s forwards;
 }
 @-webkit-keyframes active-menu-bar11-01 {
     0% {
@@ -170,8 +170,8 @@
     }
 }
 .menu-trigger.active-11 span:nth-of-type(2) {
-    -webkit-animation : active-menu-bar11-02 .5s .5s forwards;
-    animation : active-menu-bar11-02 .5s .5s forwards;
+    -webkit-animation : active-menu-bar11-02 .2s .2s forwards;
+    animation : active-menu-bar11-02 .2s .2s forwards;
 }
 @-webkit-keyframes active-menu-bar11-02 {
     0% {
@@ -190,8 +190,8 @@
     }
 }
 .menu-trigger.active-11 span:nth-of-type(3) {
-    -webkit-animation : active-menu-bar11-03 .5s .5s forwards;
-    animation : active-menu-bar11-03 .5s .5s forwards;
+    -webkit-animation : active-menu-bar11-03 .2s .2s forwards;
+    animation : active-menu-bar11-03 .2s .2s forwards;
 }
 @-webkit-keyframes active-menu-bar11-03 {
     0% {
