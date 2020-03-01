@@ -37,6 +37,12 @@ header .header_box{
     display: flex;
     justify-content: space-between;
 }
+.header_box h1 .logo_mobmobile{
+    display: none;
+}
+.header_box h1 a img{
+    /* width: 100%; height: auto; */
+}
 
 /* nav_1_depth */
 .header_box .nav_1_depth{
@@ -62,8 +68,8 @@ header .header_box{
     letter-spacing: 5px;
     border-right: 1px solid #ccc;
 }
-.header_box .nav_1_depth ul li:last-child a{
-    border-right: none;
+.header_box .nav_1_depth ul li:nth-of-type(4) a{
+    border: none;
 }
 .nav_language{
     display: none;
@@ -111,7 +117,7 @@ li:hover .nav_2_depth::before{
 .nav_2_depth ul li a{
     display: block;
     border: none !important;
-    font-size: 1rem !important;
+    font-size: 1rem;
     font-family: 'Noto Sans KR', sans-serif;
     letter-spacing: 1px;
     padding: 10px 0;
@@ -421,7 +427,6 @@ li:hover .product_icon p:last-child{
     display: flex;
     justify-content: center;
 }
-
 .customer_area ul{
     position: relative;
     margin: 0;
@@ -456,7 +461,6 @@ li:hover .product_icon p:last-child{
     transform: translateX(-50%) translateY(-50%);
 }
 .customer_area ul li a{
-    display: inline-block;
     color: #fff;
     border: 5px solid #fff;
     border-right: 5px solid #949494;
@@ -557,6 +561,7 @@ footer ul li small{
         width: 100%;
         padding: 20px 0;
     }
+    
     .nav_2_depth{
         position: absolute;
         left: 0; top: 63px;
@@ -570,14 +575,11 @@ footer ul li small{
 /* product_area */
     .product_area ul{
         width: 88%;
-        margin: 0 auto;
     }
     .product_area ul li{
         margin-left: 3vw;
     }
     .product_icon{
-        width: 100%;
-        position: absolute;
         left: 0%; bottom: -20%;
     }
     .product_icon p img{
@@ -587,7 +589,6 @@ footer ul li small{
 /* technology_area */
 
     .technology_area_blue{
-        width: 100%;
         height: 380px;
         margin: 30px 0;
     }
@@ -711,12 +712,10 @@ footer ul li small{
 
     h2{
         font-size: 1.75em;
-        /* font-size: 2vw; */
         margin-bottom: 10px;
     }
     h2 span{
         font-size: 1.75rem;
-        /* font-size: 2vw; */
         color: #666;
     }
 
@@ -725,9 +724,7 @@ footer ul li small{
         padding: 50px 0 190px 0;
     }
     .product_icon{
-        width: 100%;
-        position: absolute;
-        left: 0%; bottom: -30%;
+        bottom: -30%;
     }
     .product_area ul li a figure figcaption span{
         font-size: 1.1em;
@@ -738,8 +735,6 @@ footer ul li small{
         padding: 50px 0 0;
     }
     .technology_area_blue{
-        width: 100%;
-        height: 380px;
         margin: 30px 0;
         background: transparent;
     }
@@ -806,11 +801,176 @@ footer ul li small{
         padding-bottom: 45px;
     }
     
+/* customer_area */
+    .customer_area ul li strong{
+        font-size: 3.5vw;
+    }
+    .customer_area ul li span{
+        font-size: 1.5vw;
+    }
+    .customer_area ul li:last-child{
+        left: 50%; bottom: 12%;
+    }
+    .customer_area ul li a{
+        padding: 10px 20px;
+    }
 
-
-
+    /* footer */
+    footer > div{
+        width: 100%;
+    }
+    footer ul li{
+        width: 61%;
+    }
+    footer ul li span{
+        font-size: 1.8vw;
+    }
+    footer ul li small{
+        font-size: 1.3vw;
+        margin-top: 0.3vw;
+    }
+    .footer_map a p img{
+        margin-bottom: -0.6vw;
+    }
 }
 
+@media(max-width:480px){
+    header{
+        width: 100%;
+        padding: 0 30px;
+    }
+    .header_box h1 a:first-child, .visual ul li figure figcaption small, .visual ul li .visual_line, .visual ul li figure figcaption span, .footer_map{
+        display: none;
+    }
+    .header_box h1 .logo_mobmobile{
+        display: block;
+    }
+    .header_bugur{
+        transform: scale(0.8);
+    }
+    .header_box .nav_1_depth{
+        width: 480px;
+    }
+    .header_box .nav_1_depth ul li a{
+        width: 100%;
+        font-size: 0.938em;
+        padding-right: 50px;
+    }
+    .header_box .nav_1_depth ul li:last-child a{
+        font-size: 0.875em;
+    }
+    .header_box .nav_1_depth ul li .nav_2_depth ul li a{
+        font-size: 0.813em;
+    }
 
+/* visual */
+    .visual ul li figure figcaption{
+        width: 100%; height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 0; top: 0;
+        transform: none;
+    }
+    .visual ul li figure figcaption strong{
+        font-size: 9vw;
+    }
 
-@media(max-width:480px){}
+/* product_area */
+    .product_area{
+        padding: 50px 0 100px 0;
+    }
+    .product_area ul{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .product_area ul li{
+        margin: 0;
+        margin-top: 50px;
+    }
+    .product_area ul li:first-child{
+        margin: 0;
+    }
+    .product_area ul li:nth-of-type(1), .product_area ul li:nth-of-type(3){
+        transform: none;
+    }
+    .product_area ul li a figure figcaption span{
+        padding: 10vw;
+    }
+    .product_icon{
+        left: 0%; bottom: 22%;
+    }
+/* technology_area */
+    .technology_area{
+        padding: 50px 0 120px;
+    }
+    .technology_area_blue div{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .technology_area_blue div > p{
+        width: 70%;
+        margin: 0 auto;
+        position: static;
+    }
+    .technology_area_blue div dl{
+        width: 100%; height: 55vw;
+        left: 0; top: -3vw;
+    }
+    .technology_area_blue div dl dt{
+        padding: 4vw;
+    }
+    .technology_area_blue div dl dd{
+        bottom: 0vw;
+    }
+    .technology_area_blue div dl dd:nth-of-type(1){
+        left: 10vw;
+    }
+    .technology_area_blue div dl dd:nth-of-type(2){
+        left: 35vw;
+    }
+    .technology_area_blue div dl dd:nth-of-type(3){
+        left: 60vw;
+    }
+    .technology_area_blue div dl dd a:hover .technology_text_up{
+        padding-bottom: 35px;
+    }
+
+/* customer_area */
+    .customer_area{
+        display: flex;
+        flex-direction: column;
+    }
+    .customer_area ul li strong{
+        font-size: 7vw;
+    }
+    .customer_area ul li span{
+        font-size: 2.5vw;
+    }
+    .customer_area ul li:last-child{
+        left: 50%; bottom: 15%;
+    }
+    .customer_area ul li a{
+        padding: 15px 20px;
+    }
+
+/* footer */
+    footer ul{
+        width: 100%;
+    }
+    footer ul li{
+        width: 49%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: start;
+        flex-direction: row;
+    }
+    footer ul li small{
+        margin-top: 0.7vw;
+        padding-left: 2vw;
+    }
+    footer ul li:last-child{
+        padding: 5% 0;
+    }
+}
