@@ -5,15 +5,13 @@
 @import url('https://fonts.googleapis.com/css?family=Kanit:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i|Noto+Sans+KR:100,300,400,500,700,900&display=swap&subset=korean,latin-ext,thai,vietnamese');
 /* header_bugur */
 @import url('header_buger.css');
-
 .warp{
     width: 100%;
 }
-
 /* header */
 header{
     width: 100%;
-    padding: 0 75px;
+    padding: 0 5%;
     position: relative;
 }
 header::after{
@@ -30,7 +28,6 @@ header:hover::after{
     display: block;
     box-shadow: 0 10px 20px rgba(38, 38, 38,.8);
 }
-
 header .header_box{
     width: 100%;
     height: 90px;
@@ -40,7 +37,6 @@ header .header_box{
 .header_box h1 .logo_mobmobile{
     display: none;
 }
-
 /* nav_1_depth */
 .header_box .nav_1_depth{
     width: 1024px;
@@ -73,8 +69,6 @@ header .header_box{
 .nav_language a{
     width: 30%; height: 100%;
 }
-
-
 /* nav_2_depth */
 .nav_2_depth{
     width: 100%; height: 194px;
@@ -121,7 +115,6 @@ li:hover .nav_2_depth::before{
 .nav_2_depth ul li a:hover{
     color: #6580b6;
 }
-
 /* header_icon */
 .language{
     width: 7%;
@@ -153,11 +146,9 @@ li:hover .nav_2_depth::before{
 .header_bugur{
     display: none;
 }
-
 .contant{
     width: 100%;
 }
-
 /* visual */
 .visual{
     width: 100%;
@@ -169,7 +160,7 @@ li:hover .nav_2_depth::before{
 .visual ul li figure P img{
     width: 100%;
     animation: visual_animation 12s;
-    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 @keyframes visual_animation{
     0%{transform: scale(1.05);}
@@ -219,7 +210,6 @@ li:hover .nav_2_depth::before{
     position: absolute;
     left: 0%; top: 50%;
 }
-
 /* visual_icon */
 .visual_icon{
     width: 30%;
@@ -229,8 +219,7 @@ li:hover .nav_2_depth::before{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: rgba(0,0,0,.5);
-    
+    background: rgba(0,0,0,.5);  
 }
 .visual_icon a{
     display: block;
@@ -254,11 +243,9 @@ li:hover .nav_2_depth::before{
 .visual_icon p:hover .visual_under{
     display: block;
 }
-
 .visual_icon a img{
     width: 100%;
 }
-
 /* h2 */
 h2{
     /* font-size: 2.188em; */
@@ -270,7 +257,6 @@ h2 span{
     font-size: 2vw;
     color: #666;
 }
-
 /* product_area */
 .product_area{
     width: 100%;
@@ -286,6 +272,9 @@ h2 span{
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+}
+.product_area ul li{
+    width: 22%;
 }
 .product_area ul li:nth-of-type(1), .product_area ul li:nth-of-type(3){
     transform: translateY(75px);
@@ -326,7 +315,6 @@ h2 span{
 li:hover .product_icon p:last-child{
     opacity: 1;
 }
-
 /* technology_area */
 .technology_area{
     width: 100%;
@@ -387,7 +375,6 @@ li:hover .product_icon p:last-child{
     font-family: 'Kanit', sans-serif;
     font-weight: 900;
 }
-
 .technology_area_blue div dl dd{
     position: absolute;
     left: 0; bottom: -4vw;
@@ -398,7 +385,6 @@ li:hover .product_icon p:last-child{
 .technology_area_blue div dl dd:nth-of-type(3){
     left: 26vw;
 }
-
 .technology_area_blue div dl dd a p img{
     max-width: 100%; height: auto;
 }
@@ -432,8 +418,6 @@ li:hover .product_icon p:last-child{
 .technology_area_blue div dl dd a p{
     padding: 0;
 }
-
-
 /* customer_area */
 .customer_area{
     width: 100%;
@@ -472,18 +456,19 @@ li:hover .product_icon p:last-child{
 .customer_area ul li:last-child{
     position: absolute;
     left: 50%; bottom: 25%;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%);
 }
 .customer_area ul li a{
     color: #fff;
     border: 5px solid #fff;
     border-right: 5px solid #949494;
     border-bottom: 5px solid #949494;
-    padding: 15px 35px;
+    padding: 1.5vh 3.5vw;
     letter-spacing: 2px;
     font-weight: bold;
+    font-size: 1.5rem;
+    white-space: pre;
 }
-
 /* footer */
 footer{
     width: 100%;
@@ -531,61 +516,89 @@ footer ul li small{
     display: block;
     margin-bottom: -0.2vw;
 }
-
-
 /* =================================================================
 ==============================media=================================
 ================================================================= */
-
-@media(max-width:1024px){
-
-/* header */
+@media(max-width:1100px){
     header{
         padding: 0 40px;
     }
-    header::after{
-        content: '';
-        display: block;
-        background: #f2f3f3;
-        width: 100%; height: 257px;
-        position: absolute;
-        left: 0; top: 90px;
-        z-index: 10;
+    header .header_box{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .language, header:hover::after, li:hover .nav_2_depth::before, header:hover .nav_2_depth, li:hover .nav_2_depth{
         display: none;
     }
-    header:hover::after{
+    .header_bugur{
         display: block;
-        box-shadow: none;
     }
-    .language p a:first-child{
-        right: 40%;
-    }
-    .language p a:last-child{
-        right: 0%;
-    }
+/* nav */
     .header_box .nav_1_depth{
         width: 100%;
-        background: #f2f3f3;
-        margin: 0;
         position: absolute;
         left: 0; top: 90px;
-        z-index: 100;
+        margin: 0;
+        z-index: 300;
+        display: none;
+    }
+    .header_box .nav_1_nav{
+        display: block;
+    }
+    .header_box .nav_1_depth ul{
+        display: flex;
+        justify-content: end;
+        flex-direction: column;
+        text-align: right;
     }
     .header_box .nav_1_depth ul li{
-        width: 100%;
-        padding: 20px 0;
+        padding: 0;
     }
-    
+    .header_box .nav_1_depth ul li a{
+        padding: 15px 70px;
+        border: none;
+        background: linear-gradient(360deg, rgba(230,230,230,1) 0%, rgba(235,235,235,1) 7%, rgba(246,246,246,1) 100%);
+    }
+    .header_box .nav_1_depth ul li a:hover{
+        background: linear-gradient(360deg, rgba(230,230,230,1) 0%, rgba(235,235,235,1) 45%, rgba(246,246,246,1) 100%);
+    }
+    .nav_language{
+        display: block;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .header_box .nav_1_depth ul .nav_language a{
+        font-size: 1em;
+        color: #999;
+    }
+    .header_box .nav_1_depth ul .nav_language a:hover{
+        text-decoration: underline;
+    }
     .nav_2_depth{
-        position: absolute;
-        left: 0; top: 63px;
+        height: 100%;
+        position: relative;
+        left: 0; top: 0;
+        display: none;
     }
-
-/* visual */
-    .visual{
-        margin-top: 6vw;
+    li:hover .nav_2_depth{
+        background: #fff;
     }
-    
+    .nav_1_depth ul li:hover .nav_2_depth{
+        display: block;
+    }
+    .header_box .nav_1_depth ul li .nav_2_depth ul li a{
+        background: #fff;
+        border-bottom: 1px solid #f0f0f0 !important;
+    }
+    .header_box .nav_1_depth ul li .nav_2_depth ul li a:hover{
+        background: rgba(176, 201, 253, .3);
+        color: #333;
+    }    
+}
+@media(max-width:1024px){
 /* product_area */
     .product_area ul{
         width: 88%;
@@ -599,9 +612,7 @@ footer ul li small{
     .product_icon p img{
         max-width: 100%; height: auto;
     }
-
 /* technology_area */
-
     .technology_area_blue{
         height: 380px;
         margin: 30px 0;
@@ -648,85 +659,12 @@ footer ul li small{
     }
 } 
 @media(max-width:768px){
-
-    header .header_box{
-        width: 100%;
-        height: 90px;
-        display: flex;
-        justify-content: space-between;
-    }
-    .header_bugur{
-        display: block;
-    }
-    .language, header:hover::after, li:hover .nav_2_depth::before, header:hover .nav_2_depth, li:hover .nav_2_depth{
-        display: none;
-    }
-/* nav */
-    .header_box .nav_1_depth{
-        width: 100%;
-        display: none;
-    }
-    .header_box .nav_1_nav{
-        display: block;
-    }
-    .header_box .nav_1_depth ul{
-        display: flex;
-        justify-content: end;
-        flex-direction: column;
-        text-align: right;
-    }
-    .header_box .nav_1_depth ul li{
-        padding: 0;
-    }
-    .header_box .nav_1_depth ul li a{
-        padding: 15px 30px;
-        border: none;
-        background: linear-gradient(360deg, rgba(230,230,230,1) 0%, rgba(235,235,235,1) 7%, rgba(246,246,246,1) 100%);
-    }
-    .header_box .nav_1_depth ul li a:hover{
-        background: linear-gradient(360deg, rgba(230,230,230,1) 0%, rgba(235,235,235,1) 45%, rgba(246,246,246,1) 100%);
-    }
-    .nav_language{
-        display: block;
-        display: flex;
-        justify-content: center;
-        text-align: center;
-    }
-    .header_box .nav_1_depth ul .nav_language a{
-        font-size: 1em;
-        color: #999;
-    }
-    .header_box .nav_1_depth ul .nav_language a:hover{
-        text-decoration: underline;
-    }
-    .nav_2_depth{
-        height: 100%;
-        position: relative;
-        left: 0; top: 0;
-        display: none;
-    }
-    li:hover .nav_2_depth{
-        background: #fff;
-    }
-    .nav_1_depth ul li:hover .nav_2_depth{
-        display: block;
-    }
-    .header_box .nav_1_depth ul li .nav_2_depth ul li a{
-        background: #fff;
-        border-bottom: 1px solid #f0f0f0 !important;
-    }
-    .header_box .nav_1_depth ul li .nav_2_depth ul li a:hover{
-        background: rgba(176, 201, 253, .3);
-        color: #333;
-    }
-
     .visual{
         margin-top: 0vw;
     }
     .visual_icon{
         width: 40%;
     }
-
     h2{
         font-size: 1.75em;
         margin-bottom: 10px;
@@ -735,7 +673,6 @@ footer ul li small{
         font-size: 1.75rem;
         color: #666;
     }
-
 /* product_area */
     .product_area{
         padding: 50px 0 190px 0;
@@ -746,7 +683,6 @@ footer ul li small{
     .product_area ul li a figure figcaption span{
         font-size: 1.1em;
     }
-
 /* technology_area */
     .technology_area{
         padding: 50px 0 0;
@@ -817,7 +753,6 @@ footer ul li small{
     .technology_area_blue div dl dd a:hover .technology_text_up{
         padding-bottom: 45px;
     }
-    
 /* customer_area */
     .customer_area ul li strong{
         font-size: 3.5vw;
@@ -831,8 +766,7 @@ footer ul li small{
     .customer_area ul li a{
         padding: 10px 20px;
     }
-
-    /* footer */
+/* footer */
     footer > div{
         width: 100%;
     }
@@ -850,7 +784,6 @@ footer ul li small{
         margin-bottom: -0.6vw;
     }
 }
-
 @media(max-width:480px){
     header{
         width: 100%;
@@ -879,7 +812,6 @@ footer ul li small{
     .header_box .nav_1_depth ul li .nav_2_depth ul li a{
         font-size: 0.813em;
     }
-
 /* visual */
     .visual_icon{
         width: 60%;
@@ -895,7 +827,6 @@ footer ul li small{
     .visual ul li figure figcaption strong{
         font-size: 9vw;
     }
-
 /* product_area */
     .product_area{
         padding: 50px 0 100px 0;
@@ -905,6 +836,7 @@ footer ul li small{
         flex-direction: column;
     }
     .product_area ul li{
+        width: 100%;
         margin: 0;
         margin-top: 50px;
     }
@@ -956,7 +888,6 @@ footer ul li small{
     .technology_area_blue div dl dd a:hover .technology_text_up{
         padding-bottom: 35px;
     }
-
 /* customer_area */
     .customer_area{
         display: flex;
@@ -974,7 +905,6 @@ footer ul li small{
     .customer_area ul li a{
         padding: 15px 20px;
     }
-
 /* footer */
     footer ul{
         width: 100%;
