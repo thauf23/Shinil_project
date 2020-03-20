@@ -1,6 +1,7 @@
 $(function(){
 //ready
 
+//img_icon Selection
 $('.visual_icon span').on('click',function(){
     var idx = $(this).index();
     var idxImg = idx - 2;
@@ -10,9 +11,18 @@ $('.visual_icon span').on('click',function(){
     $('.visual ul li').removeClass('visual_show');
     $('.visual ul li').eq(idxImg).addClass('visual_show');
     }
-
 });
 
+//play icon
+$('.visual_icon p').on('click',function(){
+    var playImg = 'img/visual/play-button.png';
+    var playSrc = 'img/visual/pause.png';
+    if($(this).find('img').attr('src') == playSrc){
+        $(this).find('img').attr('src',playImg);
+    }else{
+        $(this).find('img').attr('src',playSrc);
+    }
+});
 
 
 
