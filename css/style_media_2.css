@@ -232,35 +232,33 @@ li:hover .nav_2_depth::before{
     background: rgba(0,0,0,.5);  
 }
 .visual_icon span{
-    /* display: block; */
     padding: 2vh 0 2vh;
     transition: 0.35s;
 }
-.visual_icon span:hover{
+/* .visual_icon span :hover{
     transform: scale(1.2);
+} */
+.visual_icon span:nth-of-type(2){
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.visual_icon span:nth-of-type(2) img{
+    width: 7%;
 }
 .visual_icon p{
     position: relative;
 }
-.visual_icon p .visual_under{
-    /* position: absolute;
-    left: 0; top: 0; */
-    /* display: block; */
-}
-/* .visual_icon p span:hover .visual_under{
-    display: none;
-} */
 .visual_icon p .visual_player{
     position: absolute;
     left: 0; top: 0;
     display: none;
 }
-/* .visual_icon p span:hover .visual_player{
-    display: block;
-} */
 .visual_icon span img{
     width: 100%;
 }
+
 /* h2 */
 h2{
     /* font-size: 2.188em; */
