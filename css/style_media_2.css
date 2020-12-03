@@ -168,6 +168,9 @@ li:hover .nav_2_depth::before{
     display: block;
     margin-bottom: -4px;
 }
+.visual ul li a{
+    width: 100%;
+}
 .visual ul li:nth-of-type(1) figure P img{
     animation: visual_animation 12s;
     animation-fill-mode: both;
